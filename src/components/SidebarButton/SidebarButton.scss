@@ -1,0 +1,39 @@
+.sidebar-btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #A4A6B3;
+    cursor: pointer;
+    padding: 20px 50px;
+    border-left: 3px solid transparent;
+    transition: all ease 0.5s;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+
+    .btn-icon {
+        margin-right: 24px;
+        svg {
+            fill: rgba(159, 162, 180, 0.4);
+
+        }
+    }
+    &:hover, &.active {
+        color: #DDE2FF;
+        border-left: 3px solid #DDE2FF;
+        background-color: rgba(159, 162, 180, 0.08);
+
+        .btn-icon {
+            svg {
+                fill: rgba(221, 226, 255, 1);
+    
+            }
+        }
+    }
+}
