@@ -1,4 +1,4 @@
-import Ideas from './Ideas'
+// import Ideas from './Ideas'
 
 
-export default Ideas;
+// export default Ideas;

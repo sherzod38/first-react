@@ -4,12 +4,16 @@ import {
   Route
 }from 'react-router-dom';
 
+
+
 import Tickets from './pages/Tickets/Tickets'
-import Overview from './pages/Overview'
-import Ideas from './pages/ideas'
+import Overview from './pages/Overview/index'
+import Ideas from './pages/Ideas/Ideas'
+import Contacts from './pages/Contacts/Contacts'
 
 
 import Sidebar from './containers/Sidebar/Sidebar'
+import Toolbar from './containers/Toolbar'
 
 import './assets/styles/main.scss'
 import Table from './containers/Table/Table';
@@ -21,16 +25,18 @@ function App() {
       <div className="App">
         <Sidebar/>
         
+          {/* <Toolbar/> */}
 
         <div className="content">
 
-          {/* <Table/> */}
 
 
           <Switch>
             <Route path='/tickets' component={Tickets}/>
-            <Route path='/overwiev' component={Overview}/>
+            <Route path='/overview' component={Overview}/>
             <Route path='/ideas' component={Ideas}/>
+            <Route path='/contacts' component={Contacts}/>
+
           </Switch>
         </div>
       
